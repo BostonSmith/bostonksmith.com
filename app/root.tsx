@@ -7,7 +7,10 @@ import {
   Scripts,
   ScrollRestoration
 } from '@remix-run/react'
+import TopNavigation from './components/TopNavigation'
+
 import styles from './tailwind.css'
+import appStyles from './styles/app.css'
 
 export const meta: MetaFunction = () => ({
   charset: 'utf-8',
@@ -15,7 +18,10 @@ export const meta: MetaFunction = () => ({
   viewport: 'width=device-width,initial-scale=1'
 })
 
-export const links: LinksFunction = () => [{ rel: 'stylesheet', href: styles }]
+export const links: LinksFunction = () => [
+  { rel: 'stylesheet', href: styles },
+  { rel: 'stylesheet', href: appStyles }
+]
 
 export default function App() {
   return (
@@ -25,6 +31,7 @@ export default function App() {
         <Links />
       </head>
       <body>
+        <TopNavigation />
         <Outlet />
         <ScrollRestoration />
         <Scripts />

@@ -15,6 +15,7 @@
     "start": "cross-env NODE_ENV=production netlify dev"
   },
   "dependencies": {
+    "@heroicons/react": "^1.0.6",
     "@netlify/functions": "^0.10.0",
     "@remix-run/netlify": "^1.4.1",
     "@remix-run/node": "^1.4.1",

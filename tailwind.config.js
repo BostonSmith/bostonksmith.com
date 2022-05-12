@@ -1,7 +1,11 @@
 module.exports = {
   content: ['./app/**/*.{ts,tsx,jsx,js}'],
   theme: {
-    extend: {}
+    extend: {
+      spacing: {
+        '5vw': '5vw'
+      }
+    }
   },
   plugins: []
 }
