@@ -5,22 +5,34 @@ interface Props {
   children: React.ReactNode
 }
 
-const Logo = () => {
+const NavContainer = ({ children }: Props) => {
   return (
-    <div className='flex space-x-2 items-center'>
-      <TerminalIcon className='h-10 w-10' />
-      <a href='#home'>
-        <h1 className='text-2xl font-medium'>Boston K. Smith</h1>
-      </a>
+    <div className='px-5vw py-9 lg:py-14'>
+      <nav className='container mx-auto flex justify-between items-center '>
+        {children}
+      </nav>
     </div>
   )
 }
 
-const TopNavItemContainer = ({ children }: Props) => {
-  return <div className='hidden space-x-14 md:flex'>{children}</div>
+const Logo = () => {
+  return (
+    <a href='#home' className='flex space-x-2 items-center justify-center'>
+      <TerminalIcon className='h-10 w-10' />
+      <h1 className='text-2xl font-medium'>Boston K. Smith</h1>
+    </a>
+  )
 }
 
-const TopNavItem = () => {
+const NavItemContainer = ({ children }: Props) => {
+  return (
+    <div className='hidden space-x-14 items-center justify-center md:flex'>
+      {children}
+    </div>
+  )
+}
+
+const NavItem = () => {
   return (
     <>
       {navItems.map(navItem => (
@@ -38,14 +50,12 @@ const TopNavItem = () => {
 
 const TopNavigation = () => {
   return (
-    <div className='px-5vw py-9 lg:py-14'>
-      <nav className='container mx-auto flex justify-between items-center '>
-        <Logo />
-        <TopNavItemContainer>
-          <TopNavItem />
-        </TopNavItemContainer>
-      </nav>
-    </div>
+    <NavContainer>
+      <Logo />
+      <NavItemContainer>
+        <NavItem />
+      </NavItemContainer>
+    </NavContainer>
   )
 }
 
