@@ -19,7 +19,7 @@ const BottomNavigation = () => {
           key={navItem.name}
           className='flex flex-col items-center justify-center space-y-1'
         >
-          <navItem.icon className='h-6 w-6 text-gray-600' />
+          <navItem.icon className='h-7 w-7 text-gray-500' />
           <div className='text-xs text-gray-900'>{navItem.name}</div>
         </div>
       ))}
