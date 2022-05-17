@@ -8,11 +8,10 @@ import {
   ScrollRestoration
 } from '@remix-run/react'
 import Navbar from './components/Navbar'
-import Menu from './components/Menu' './components/Menu'
+import Menu from './components/Menu'
 
 import styles from './tailwind.css'
 import appStyles from './styles/app.css'
-import Menu from './components/Menu'
 
 export const meta: MetaFunction = () => ({
   charset: 'utf-8',
