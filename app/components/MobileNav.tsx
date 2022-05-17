@@ -1,4 +1,5 @@
 import { navItems } from '~/shared/List'
+
 interface Props {
   children: React.ReactNode
 }
@@ -11,9 +12,9 @@ const NavContainer = ({ children }: Props) => {
   )
 }
 
-const BottomNavigation = () => {
+const NavItem = () => {
   return (
-    <NavContainer>
+    <>
       {navItems.map(navItem => (
         <div
           key={navItem.name}
@@ -23,8 +24,16 @@ const BottomNavigation = () => {
           <div className='text-xs text-gray-900'>{navItem.name}</div>
         </div>
       ))}
+    </>
+  )
+}
+
+const MobileNav = () => {
+  return (
+    <NavContainer>
+      <NavItem />
     </NavContainer>
   )
 }
 
-export default BottomNavigation
+export default MobileNav

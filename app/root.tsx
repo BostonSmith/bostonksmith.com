@@ -7,8 +7,8 @@ import {
   Scripts,
   ScrollRestoration
 } from '@remix-run/react'
-import TopNavigation from './components/TopNavigation'
-import BottomNavigation from './components/BottomNavigation'
+import Navbar from './components/Navbar'
+import BottomNavigation from './components/MobileNav'
 
 import styles from './tailwind.css'
 import appStyles from './styles/app.css'
@@ -32,7 +32,7 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <TopNavigation />
+        <Navbar />
         <Outlet />
         <BottomNavigation />
         <ScrollRestoration />

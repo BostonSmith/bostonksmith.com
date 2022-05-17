@@ -48,7 +48,7 @@ const NavItem = () => {
   )
 }
 
-const TopNavigation = () => {
+const Navbar = () => {
   return (
     <NavContainer>
       <Logo />
@@ -59,4 +59,4 @@ const TopNavigation = () => {
   )
 }
 
-export default TopNavigation
+export default Navbar
