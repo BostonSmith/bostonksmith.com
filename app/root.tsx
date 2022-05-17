@@ -8,10 +8,11 @@ import {
   ScrollRestoration
 } from '@remix-run/react'
 import Navbar from './components/Navbar'
-import BottomNavigation from './components/MobileNav'
+import Menu from './components/Menu' './components/Menu'
 
 import styles from './tailwind.css'
 import appStyles from './styles/app.css'
+import Menu from './components/Menu'
 
 export const meta: MetaFunction = () => ({
   charset: 'utf-8',
@@ -34,7 +35,7 @@ export default function App() {
       <body>
         <Navbar />
         <Outlet />
-        <BottomNavigation />
+        <Menu />
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
