@@ -1,6 +1,6 @@
 import React from 'react'
 
-const HomeSection = () => {
+const Hero = () => {
   return (
     <section id='home' className='px-5vw'>
       <div className='container mx-auto'>
@@ -24,4 +24,4 @@ const HomeSection = () => {
   )
 }
 
-export default HomeSection
+export default Hero

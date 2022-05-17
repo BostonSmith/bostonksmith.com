@@ -1,9 +1,9 @@
-import HomeSection from '~/components/sections/home-section'
+import Hero from '~/components/sections/Hero'
 
 export default function Index() {
   return (
     <main>
-      <HomeSection />
+      <Hero />
     </main>
   )
 }
