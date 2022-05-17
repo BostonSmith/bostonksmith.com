@@ -4,7 +4,7 @@ interface Props {
   children: React.ReactNode
 }
 
-const NavContainer = ({ children }: Props) => {
+const MenuContainer = ({ children }: Props) => {
   return (
     <div className='bg-gray-50 fixed bottom-0 w-full shadow-inner px-8 py-2 flex flex-row justify-between md:hidden'>
       {children}
@@ -12,7 +12,7 @@ const NavContainer = ({ children }: Props) => {
   )
 }
 
-const NavItem = () => {
+const MenuItem = () => {
   return (
     <>
       {navItems.map(navItem => (
@@ -28,12 +28,12 @@ const NavItem = () => {
   )
 }
 
-const MobileNav = () => {
+const Menu = () => {
   return (
-    <NavContainer>
-      <NavItem />
-    </NavContainer>
+    <MenuContainer>
+      <MenuItem />
+    </MenuContainer>
   )
 }
 
-export default MobileNav
+export default Menu
