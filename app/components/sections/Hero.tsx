@@ -13,7 +13,7 @@ const Hero = ({ title, subtitle, description }: HeroSectionProps) => {
             <span className='block bg-gradient-to-r from-purple-800 to-indigo-700 mix-blend-multiply text-transparent bg-clip-text'>
               {title}
             </span>
-            <span className='block text-black whitespace-pre'>{subtitle}</span>
+            <span className='block text-black'>{subtitle}</span>
           </h1>
           <p className='mt-6 max-w-lg mx-auto text-center text-xl text-gray-500 sm:max-w-3xl'>
             {description}
