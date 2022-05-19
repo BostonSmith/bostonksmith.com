@@ -15,7 +15,7 @@ const NavContainer = ({ children }: Props) => {
   )
 }
 
-const Logo = () => {
+const NavBrand = () => {
   return (
     <a href='#home' className='flex space-x-2 items-center justify-center'>
       <TerminalIcon className='h-10 w-10' />
@@ -51,7 +51,7 @@ const NavItem = () => {
 const Navbar = () => {
   return (
     <NavContainer>
-      <Logo />
+      <NavBrand />
       <NavItemContainer>
         <NavItem />
       </NavItemContainer>
@@ -59,4 +59,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export { Navbar }
