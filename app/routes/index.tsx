@@ -1,9 +1,9 @@
-import Hero from '~/components/sections/Hero'
+import { HeroSection } from '~/components/sections/Hero-Section'
 
 export default function Index() {
   return (
     <main>
-      <Hero
+      <HeroSection
         title='Boston Smith'
         subtitle='Full Stack Web Developer'
         description="I'm a full stack web developer who has a passion for solving

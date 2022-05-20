@@ -4,7 +4,7 @@ export type HeroSectionProps = {
   description?: string | React.ReactNode
 }
 
-const Hero = ({ title, subtitle, description }: HeroSectionProps) => {
+const HeroSection = ({ title, subtitle, description }: HeroSectionProps) => {
   return (
     <section id='home' className='px-5vw'>
       <div className='container mx-auto'>
@@ -24,4 +24,4 @@ const Hero = ({ title, subtitle, description }: HeroSectionProps) => {
   )
 }
 
-export default Hero
+export { HeroSection }
