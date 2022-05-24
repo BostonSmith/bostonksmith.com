@@ -7,7 +7,7 @@ const FeaturedSection = () => {
             Featured Project
           </h2>
           <p className='mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl'>
-            Showify App
+            Showify App1
           </p>
           <p className='mt-5 max-w-prose mx-auto text-xl text-gray-500'>
             Phasellus lorem quam molestie id quisque diam aenean nulla in.
