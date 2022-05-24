@@ -1,5 +1,5 @@
-import { TerminalIcon } from '@heroicons/react/outline'
-import { navItems } from '~/shared/List'
+import { TerminalIcon } from "@heroicons/react/outline"
+import { navItems } from "~/shared/List"
 
 interface Props {
   children: React.ReactNode
@@ -35,7 +35,7 @@ const NavItemContainer = ({ children }: Props) => {
 const NavItem = () => {
   return (
     <>
-      {navItems.map(navItem => (
+      {navItems.map((navItem) => (
         <a
           key={navItem.name}
           className='font-medium underlined text-gray-500 hover:text-gray-900'
